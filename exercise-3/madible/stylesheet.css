@@ -1,0 +1,39 @@
+body {
+	background-color: #e03845;
+ }
+
+form {
+   margin: 0 auto;
+   width: 400px;
+   padding: 2em;
+   border: 1px solid #CCC;
+   border-radius: 1em;
+ }
+
+h1 { 
+font-family: PT Sans;
+font-size: 20px;
+text-align: center;
+color: #d0ddf7;
+
+}
+ 
+div { 
+padding: .2em;
+text-align: center;
+color: black;
+
+}
+
+#button {
+padding: 2em;
+}
+
+#story {
+
+color: black;
+font-family: PT Sans bold;
+font-size: 20px ;
+
+}
+.madlibword{color:purple;}
