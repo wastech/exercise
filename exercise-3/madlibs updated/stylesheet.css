@@ -1,0 +1,39 @@
+body {
+	background-color: #ccc;
+ }
+
+form {
+   margin: 0 auto;
+   width: 400px;
+   padding: 2em;
+   border: 5px solid black;
+   border-radius: 1em ;
+ }
+
+h1 { 
+font-family: PT Sans;
+font-size: 20px;
+text-align: center;
+color: black;
+
+}
+ 
+div { 
+padding: .2em;
+text-align: center;
+color: black;
+
+}
+
+#button {
+padding: 2em;
+}
+
+#story {
+
+color: black;
+font-family: PT Sans bold;
+font-size: 20px ;
+
+}
+.fill{color:red;}

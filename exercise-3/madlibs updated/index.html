@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>wastech</title> 
+</head>
+<body>
+	<form>
+		<h1>Mad Libs</h1>
+        <div>
+          <label for="Place">Place:</label> <input type="text" id="place"></textarea>
+        </div>
+        <div>
+          <label for="Noun">Noun:</label> <input type="text" id="noun"></textarea>
+        </div>
+        <div>
+          <label for="Song Title">Song Title:</label> <input type="text" 		
+          id="songtitle"></textarea>
+          </div>
+        <div>
+          <label for="Verb">Verb (past tense):</label> <input type="text" 			 
+          id="verb"></textarea>
+        </div>
+        <div id="button">
+          <button type="button">Tell Story</button>
+        </div>
+    </form>
+    <br/>
+    <form>
+    <h1>Katherine's Mad Princess Fairy Tale</h1>
+	<div id="story"></div>
+   
+    </form>    
+</body>
+
+</html>
+<script>
+// Step 1 Found the element I want the event on
+var button = document.getElementById("button");
+  // Step 2 Defined the event listener function
+  var onButtonClick = function() {
+      	var place = document.getElementById("place").value;
+		var noun = document.getElementById("noun").value;
+		var songtitle = document.getElementById("songtitle").value;
+		var verb = document.getElementById("verb").value;
+      	
+document.getElementById("story").innerHTML += "The people of <span class=\"fill\">" + place + "<\/span> lost their princess to the wind. She blew away so far she had no idea where she was. The land was made of <span class=\"fill\">" +  noun + "<\/span>  and the clouds looked <span class=\"fill\">" + noun + "<\/span> . A band of <span class=\"fill\">" + noun  + "<\/span>  played her favorite song,<span class=\"fill\">"  + songtitle + "<\/span> . They <span class=\"fill\">" + verb + "<\/span>  and <span class=\"fill\">"+ verb + "<\/span>  until she fell asleep" +  ". She woke up on a <span class=\"fill\">"  + noun + "<\/span>  and realized she never left <span class=\"fill\">" + place + "<\/span>  and was only dreaming. " ;  
+  };
+  // Step 3 Attach event listener to element
+  button.addEventListener("click", onButtonClick);
+   </script>
