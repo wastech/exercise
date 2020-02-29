@@ -30,7 +30,7 @@
         }
         
         .main {
-            padding: 0 1.5em;
+            padding: 0 1.5em 1.5em;
             background-color: #fff;
             border-radius: 0.5em;
         }
@@ -39,7 +39,6 @@
         h2 {
             max-width: 1080px;
             margin: 0 auto;
-            text-align: center;
         }
         
         .column-1 {
@@ -120,6 +119,11 @@
             clear: both;
         }
         
+        .row {
+            margin-left: -0.75em;
+            margin-right: -0.75em;
+        }
+        
         .row::after {
             content: " ";
             display: block;
@@ -128,8 +132,8 @@
         
         [class*="column-"] {
             float: left;
-            padding: 0 0.6em;
-            margin-top: 1;
+            padding: 0 0.75em;
+            margin-top: 0;
         }
     </style>
 </head>
